@@ -1,0 +1,5 @@
+@echo off
+rem Double-click to install LightWave MCP. Close LightWave first.
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0installer\install.ps1" %*
+echo.
+pause
