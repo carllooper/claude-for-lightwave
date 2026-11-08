@@ -11,8 +11,18 @@ frames to check its work, while you watch it happen in LightWave.
 
 ![An aluminium sphere under a SkyTracer sky, rendered in Layout](docs/aluminium_sphere.png)
 
-*"Make the sphere aluminium and render it under a SkyTracer sky." Claude set the Principled
-BSDF surface, added the sky and rendered in Layout.*
+A conversation in four prompts:
+
+1. *"Create a sphere, using 1000 points, in which points are as evenly distributed as
+   possible, and connected by triangles."* Claude spread the points over the sphere and joined
+   them into a closed mesh of triangles, all facing outward.
+2. *"Let's build another sphere in the same way, but this time with 10000 points."* The same
+   again: 10,000 points and 19,996 triangles, built in Modeler in a tenth of a second.
+3. *"Change Sphere10k to an aluminium surface."* Claude set up a metallic Principled BSDF
+   surface with smoothing on.
+4. *"Move the 10K sphere to its own object, save it and render it in Layout. We might need to
+   set the background to SkyTracer."* Claude moved it to its own object, added a SkyTracer sky
+   and rendered it in Layout.
 
 ## What you need
 
